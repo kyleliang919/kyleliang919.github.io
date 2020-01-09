@@ -12,17 +12,17 @@ body{
     font-family: 'Roboto', sans-serif;
     /*background-color: #101214;*/
     background-color: #535150;
-    color: #bbbdbf;
+    color: #D2E4CF;
     background-image:url('images/background.jpg');
 
 }
 
 h2,.white{
-    color: #bbbdbf;
+    color: #D2E4CF;
 }
 
 a{
-    color: #bbbdbf;
+    color: #D2E4CF;
     text-decoration: none;
 }
 /* section 1 */
