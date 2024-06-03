@@ -20,25 +20,28 @@
             min-height: 100vh;
         }
         .container {
-            max-width: 900px;
+            max-width: 1200px;
             width: 100%;
             background: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             overflow: hidden;
             display: flex;
-            flex-wrap: wrap;
         }
         .section-1, .section-2 {
-            padding: 20px;
+            padding: 40px;
             flex: 1;
         }
         .section-1 {
             background: #f4f4f4;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         .section-1 img {
-            width: 150px;
+            width: 180px;
             border-radius: 50%;
             margin-bottom: 15px;
         }
@@ -51,11 +54,12 @@
         .section-1 a {
             margin: 0 10px;
             color: #333;
+            font-size: 24px;
         }
         .section-2 h2 {
             margin-top: 0;
             border-bottom: 2px solid #eee;
-            padding-bottom: 5px;
+            padding-bottom: 10px;
         }
         .section-2 p {
             margin: 10px 0;
@@ -63,6 +67,7 @@
         .section-2 a {
             color: #007acc;
             text-decoration: none;
+            font-size: 18px;
         }
         .section-2 a:hover {
             text-decoration: underline;
@@ -76,7 +81,10 @@
             display: block;
             margin-top: 20px;
             text-align: center;
-            font-size: 16px;
+            font-size: 18px;
+        }
+        .section-2 p, .section-2 a {
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -115,13 +123,13 @@
             
             <h2>Relevant Projects</h2>
             <a href="https://github.com/kyleliang919/Gesture-Control-of-Autonomous-Vehicle">Gesture Control of Autonomous Vehicle</a>
-            <p style="font-size: 12px">A new interface for human interaction with Autonomous Vehicles.</p>
+            <p>A new interface for human interaction with Autonomous Vehicles.</p>
             
             <a href="https://github.com/kyleliang919/Interval-bound-propagation-pytorch">Interval Bound Propagation PyTorch</a>
-            <p style="font-size: 12px">Exploring certified defense against adversarial attacks with limited resources by using a "tighter" objective.</p>
+            <p>Exploring certified defense against adversarial attacks with limited resources by using a "tighter" objective.</p>
             
             <a href="https://github.com/kyleliang919/NIPS-2017-Learning-to-Run">Learning to Run</a>
-            <p style="font-size: 12px">TRPO and DDPG implementation to teach robots to walk in simulations.</p>
+            <p>TRPO and DDPG implementation to teach robots to walk in simulations.</p>
             
             <h2>Review Service</h2>
             <p>CVPR2021, ICCV2021, ICLR2022, CVPR2022, AISTATS2022, NEURIPS2023, ICLR2023, CVPR2023</p>
@@ -130,10 +138,6 @@
             <p>kaizhao.liang@sambanovasystems.ai</p>
             <p>kaizhaol@utexas.edu</p>
         </div>
-    </div>
-</body>
-</html>
-
     </div>
 </body>
 </html>
