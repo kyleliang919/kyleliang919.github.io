@@ -9,27 +9,23 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background: #121212;
-            color: #EAEAEA;
+            background: #F4F4F4;
+            color: #333;
             margin: 0;
             padding: 0;
         }
         .container {
             width: 80%;
             margin: auto;
-            overflow: hidden;
             padding: 20px;
         }
         header {
-            background: #002B36;
-            color: #FFCC4D;
+            background: #FFCC4D;
+            color: #333;
             padding: 30px 0;
             border-bottom: 4px solid #76B900;
             text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 28px;
+            font-weight: bold;
         }
         .profile {
             text-align: center;
@@ -41,15 +37,15 @@
             border: 3px solid #76B900;
         }
         .main-content {
-            background: #1E1E1E;
+            background: white;
             padding: 20px;
             margin-top: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
             border-radius: 10px;
         }
         h2 {
-            color: #FFCC4D;
-            border-bottom: 2px solid #76B900;
+            color: #76B900;
+            border-bottom: 2px solid #FFCC4D;
             padding-bottom: 5px;
         }
         a {
@@ -63,13 +59,13 @@
         }
         .highlight-work {
             background: #FFCC4D;
-            color: #002B36;
+            color: #333;
             padding: 15px;
             margin-top: 20px;
             border-radius: 10px;
         }
         .highlight-work a {
-            color: #002B36;
+            color: #333;
             font-weight: bold;
             text-decoration: underline;
         }
@@ -77,9 +73,9 @@
             margin-top: 20px;
         }
         .social-links a {
-            color: #FFCC4D;
-            margin: 0 10px;
-            font-size: 24px;
+            color: #76B900;
+            margin: 0 15px;
+            font-size: 28px;
         }
         .publication, .project {
             margin-bottom: 15px;
@@ -104,9 +100,10 @@
             <h2>Kaizhao Liang</h2>
             <p>AI Researcher | Austin, Texas, United States</p>
             <div class="social-links">
-                <a href="https://twitter.com/KyleLiang5"><i class="fab fa-twitter"></i></a>
-                <a href="https://github.com/kyleliang919"><i class="fab fa-github"></i></a>
-                <a href="https://github.com/kyleliang919/kyleliang919.github.io/blob/main/Kaizhao_s_Resume.pdf"><i class="fas fa-file-alt"></i></a>
+                <a href="https://twitter.com/KyleLiang5" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://github.com/kyleliang919" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kaizhaoliang" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/kyleliang919/kyleliang919.github.io/blob/main/Kaizhao_s_Resume.pdf" target="_blank"><i class="fas fa-file-alt"></i></a>
             </div>
         </div>
 
@@ -118,7 +115,7 @@
             <p>Teaching AI how to reason about the world</p>
 
             <div class="highlight-work">
-                <h3>Opensource Contribution: 🤗Huggingface timm adopts Cautious Optimizers</h3>
+                <h3> 🤗Huggingface timm adopts Cautious Optimizers</h3>
                 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">One of the last minute papers I added support for that delayed this release was &#39;Cautious Optimizers&#39;... Consider me impressed, this boost appears more consistent than some of the new optimizers.</p>&mdash; Ross Wightman (@wightmanr) <a href="https://twitter.com/wightmanr/status/1864054688192073887">December 3, 2024</a></blockquote>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
@@ -131,6 +128,24 @@
             <div class="publication">
                 <a href="https://www.arxiv.org/abs/2408.12857">Memory-Efficient LLM Training with Online Subspace Descent [NeurIPS 2024]</a>
                 <p><strong>Kaizhao Liang</strong>, Bo Liu, Lizhang Chen, Qiang Liu</p>
+            </div>
+            <div class="publication">
+                <a href="https://arxiv.org/abs/2112.00029">Pixelated Butterfly: Simple and Efficient Sparse training for Neural Network Models [ICLR 2022]</a>
+                <p>Beidi Chen, Tri Dao, <strong>Kaizhao Liang</strong>, Jiaming Yang, Zhao Song, Atri Rudra, Christopher Re</p>
+            </div>
+            <div class="publication">
+                <a href="https://arxiv.org/abs/2006.14512">Uncovering the Connections Between Adversarial Transferability and Knowledge Transferability [ICML 2020]</a>
+                <p><strong>Kaizhao Liang*</strong>, Jacky. Y. Zhang*, Boxin Wang, Zhuolin Yang, Sanmi Koyejo, Bo Li</p>
+            </div>
+
+            <h2>Relevant Projects</h2>
+            <div class="project">
+                <a href="https://github.com/kyleliang919/Gesture-Control-of-Autonomous-Vehicle">Gesture Control of Autonomous Vehicle</a>
+                <p>A new interface for human interaction with Autonomous Vehicles.</p>
+            </div>
+            <div class="project">
+                <a href="https://github.com/kyleliang919/Interval-bound-propagation-pytorch">Interval Bound Propagation PyTorch</a>
+                <p>Exploring certified defense against adversarial attacks with limited resources.</p>
             </div>
 
             <h2>Review Service</h2>
