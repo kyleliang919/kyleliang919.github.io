@@ -9,38 +9,27 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            color: #333;
+            background: #121212;
+            color: #EAEAEA;
             margin: 0;
             padding: 0;
-            background: #f4f4f4;
         }
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
-            padding: 0 20px;
+            padding: 20px;
         }
         header {
-            background: #35424a;
-            color: #ffffff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #e8491d 3px solid;
+            background: #002B36;
+            color: #FFCC4D;
+            padding: 30px 0;
+            border-bottom: 4px solid #76B900;
+            text-align: center;
         }
-        header a {
-            color: #ffffff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header .highlight, header .current a {
-            color: #e8491d;
-            font-weight: bold;
-        }
-        header a:hover {
-            color: #ffffff;
-            font-weight: bold;
+        header h1 {
+            margin: 0;
+            font-size: 28px;
         }
         .profile {
             text-align: center;
@@ -49,52 +38,53 @@
         .profile img {
             width: 150px;
             border-radius: 50%;
+            border: 3px solid #76B900;
         }
         .main-content {
-            background: #ffffff;
+            background: #1E1E1E;
             padding: 20px;
             margin-top: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            border-radius: 10px;
         }
-        h1, h2 {
-            color: #35424a;
+        h2 {
+            color: #FFCC4D;
+            border-bottom: 2px solid #76B900;
+            padding-bottom: 5px;
         }
-        .publication {
-            margin-bottom: 15px;
-        }
-        .publication a {
-            color: #e8491d;
+        a {
+            color: #76B900;
             text-decoration: none;
+            font-weight: bold;
         }
-        .publication a:hover {
+        a:hover {
+            color: #FFCC4D;
             text-decoration: underline;
         }
-        .project {
-            margin-bottom: 15px;
+        .highlight-work {
+            background: #FFCC4D;
+            color: #002B36;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        .highlight-work a {
+            color: #002B36;
+            font-weight: bold;
+            text-decoration: underline;
         }
         .social-links {
             margin-top: 20px;
         }
         .social-links a {
-            color: #35424a;
+            color: #FFCC4D;
             margin: 0 10px;
             font-size: 24px;
         }
-        .highlight-work {
-            background: #e8491d;
-            color: #ffffff;
-            padding: 15px;
-            margin-top: 20px;
-            border-radius: 5px;
+        .publication, .project {
+            margin-bottom: 15px;
         }
-        .highlight-work a {
-            color: #ffffff;
-            text-decoration: underline;
-        }
-        @media(max-width: 768px) {
-            header {
-                padding-bottom: 20px;
-            }
+        @media (max-width: 768px) {
             .container {
                 width: 95%;
             }
@@ -104,7 +94,7 @@
 <body>
     <header>
         <div class="container">
-            <h1><span class="highlight">Kaizhao Liang</span></h1>
+            <h1>Kaizhao Liang</h1>
         </div>
     </header>
 
@@ -129,29 +119,18 @@
 
             <div class="highlight-work">
                 <h3>Opensource Contribution: 🤗Huggingface timm adopts Cautious Optimizers</h3>
-                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">One of the last minute papers I added support for that delayed this release was &#39;Cautious Optimizers&#39; As I promised, I pushed some sets of experiments at <a href="https://t.co/S2G5Vv8S2A">https://t.co/S2G5Vv8S2A</a>. Consider me impressed, this boost appears more consistent than some of the new optimizers -- it&#39;s a…</p>&mdash; Ross Wightman (@wightmanr) <a href="https://twitter.com/wightmanr/status/1864054688192073887?ref_src=twsrc%5Etfw">December 3, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                <h3>Industrial Highlight: SambaNova's Llama-3.1-Instruct-O1</h3>
-                <p>I built SambaNova's recent work challenging OpenAI's O1 model with a Llama 3.1-powered demo. Check out our implementation on HuggingFace:</p>
-                <a href="https://huggingface.co/spaces/sambanovasystems/Llama3.1-Instruct-O1" target="_blank">Llama3.1-Instruct-O1 Demo</a>
-                <p>Read more about this development in the <a href="https://venturebeat.com/ai/sambanova-challenges-openais-o1-model-with-llama-3-1-powered-demo-on-huggingface/" target="_blank">VentureBeat article</a>.</p>
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">One of the last minute papers I added support for that delayed this release was &#39;Cautious Optimizers&#39;... Consider me impressed, this boost appears more consistent than some of the new optimizers.</p>&mdash; Ross Wightman (@wightmanr) <a href="https://twitter.com/wightmanr/status/1864054688192073887">December 3, 2024</a></blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
 
             <h2>Selected Publications</h2>
             <div class="publication">
-                <a href="https://www.arxiv.org/abs/2411.16085">Cautious Optimizers: Improving Training with One Line of Code </a>
+                <a href="https://www.arxiv.org/abs/2411.16085">Cautious Optimizers: Improving Training with One Line of Code</a>
                 <p><strong>Kaizhao Liang</strong>, Lizhang Chen, Bo Liu, Qiang Liu</p>
             </div>
             <div class="publication">
-                <a href="https://www.arxiv.org/abs/2408.12857">Memory-Efficient LLM Training with Online Subspace Descent [NeurIPS 2024] </a>
+                <a href="https://www.arxiv.org/abs/2408.12857">Memory-Efficient LLM Training with Online Subspace Descent [NeurIPS 2024]</a>
                 <p><strong>Kaizhao Liang</strong>, Bo Liu, Lizhang Chen, Qiang Liu</p>
-            </div>
-            <div class="publication">
-                <a href="https://arxiv.org/abs/2112.00029">Pixelated Butterfly: Simple and Efficient Sparse training for Neural Network Models [ICLR 2022] </a>
-                <p>Beidi Chen, Tri Dao, <strong>Kaizhao Liang</strong>, Jiaming Yang, Zhao Song, Atri Rudra, Christopher Re</p>
-            </div>
-            <div class="publication">
-                <a href="https://arxiv.org/abs/2006.14512">Uncovering the Connections Between Adversarial Transferability and Knowledge Transferability [ICML 2020] </a>
-                <p><strong>Kaizhao Liang*</strong>, Jacky. Y. Zhang*, Boxin Wang, Zhuolin Yang, Sanmi Koyejo, Bo Li</p>
             </div>
 
             <h2>Relevant Projects</h2>
@@ -161,7 +140,7 @@
             </div>
             <div class="project">
                 <a href="https://github.com/kyleliang919/Interval-bound-propagation-pytorch">Interval Bound Propagation PyTorch</a>
-                <p>Exploring certified defense against adversarial attacks with limited resources by using a "tighter" objective.</p>
+                <p>Exploring certified defense against adversarial attacks with limited resources.</p>
             </div>
 
             <h2>Review Service</h2>
